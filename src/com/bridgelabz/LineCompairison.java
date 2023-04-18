@@ -62,10 +62,18 @@ public class LineCompairison {
             else {
                 System.out.println("both the lines are not equal");
             }
+            //UC 3
 
 
-
-
-
-    }
+            // Compare the lengths of the lines using the compareTo method
+            if (Double.compare(length1, length2) == 0) {
+                System.out.println("The two lines are equal in length.");
+            } else if (Double.compare(length1, length2) < 0) {
+                System.out.println("The first line is smaller than the second line.");
+            } else {
+                System.out.println("The first line is Longer than the second line.");
+            }
+        }
 }
+
+
